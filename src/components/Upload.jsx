@@ -4,17 +4,7 @@ import TextField from '@material-ui/core/TextField';
 
 class Upload extends Component {
     
-    switchNameHandler = () =>{
-        console.log(this.handle.fileUrl);
-        
-      }
-      handle(event){
-          
-          let fileUrl = event.target.value;
-          console.log(fileUrl);
-          urlTexty
-          return (fileUrl);
-      }
+    
 
   render(){  
     return(
@@ -24,7 +14,7 @@ class Upload extends Component {
             <div className="uploadTabs">
     <Button color="default" onClick={this.switchNameHandler}>Upload File From Text File!!!! V2</Button>
   <Button color="primary">Upload From Device</Button>
-  <TextField  onChange={ this.handle.bind(this)} id="standard-basic" label="TXT / PDF File URL" />
+  <TextField  id="standard-basic" label="TXT / PDF File URL" />
  
 </div>
         </div>
